@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.food-profile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-profile img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 60%;
+}
+
+.actions {
+  top: 10px;
+  right: 10px;
+}
+
+.reactions, .like, .dislike {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.reactions, .like.active, .dislike.active {
+  color: red;
+}
+
+.reactions {
+  position: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.food-name {
+  margin: 10px 0;
+}
